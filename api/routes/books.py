@@ -73,8 +73,3 @@ async def get_book_by_id(book_id: int) -> Book:
         status_code=status.HTTP_200_OK,
         content=book_by_id.model_dump()
     )
-
-
-@router.get("/t/test")
-async def test_endpoint():
-    return "Working"
