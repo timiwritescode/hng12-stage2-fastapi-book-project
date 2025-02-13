@@ -53,5 +53,5 @@ def test_delete_book():
 
 
 def test_test_endpoint():
-    response = client.get("/books/test")
+    response = client.get("/books/t/test")
     assert response.status_code == 200

@@ -74,6 +74,7 @@ async def get_book_by_id(book_id: int) -> Book:
         content=book_by_id.model_dump()
     )
 
-# @router.get("/test")
-# async def test_endpoint():
-#     return "Working"
+
+@router.get("/t/test")
+async def test_endpoint():
+    return "Working"
